@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+/*font-family: 'Oooh Baby', cursive;*/
+/*font-family: 'Waterfall', cursive;*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0:#F8B5FF;
+    --cor1:#75487A;
+    --cor2:#5C1C61;
+    --cor3:#421445;
+    --cor4:#220A24;
+    --fontTitulo: 'Waterfall', cursive;
+    --fontTexto: 'Oooh Baby', cursive;
+}
+header{
+    background-color: var(--cor1);
+    box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.39);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+header>h1{
+    font-variant: small-caps;
+    font-family: var(--fontTitulo);
+    font-size: 3em;
+    color: var(--cor4);
+}
+head>p{
+    color: var(--cor2);
+}
+h2{
+    padding-bottom: 10px;
+    font-family: var(--fontTitulo);
+    font-size: 2.5em;
+    color: var(--cor4);
+}
+section{
+    padding: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 35px;
+    line-height: 1.4em;
+    font-family: var(--fontTexto);
+    font-size: 2.7vw;
+}
+section.normal{
+    background-color: white;
+    color: var(--cor4);
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.301);
+    color: var(--cor0);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.imagem>h2{
+    color: var(--cor0);
+}
+section.imagem>p{
+    display: inline-block;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.301);
+}
+section#img01{
+    background-image: url('../imagens/ilha.jfif');
+    background-position: center right;
+
+}
+section#img02{
+    background-image: url('../imagens/lakrosso.png');
+    background-position: bottom center;
+}
+footer{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+}
+a{
+    color: var(--cor0);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
